@@ -1,13 +1,16 @@
-.Section1, .Section2{
+.Section1, .Section2, .Section3{
+    scroll-margin-top: 120px;
     display: inline-block;
     vertical-align: top;
     width: 100%;
-    margin-top: 20;
-    scroll-margin-top: 50;
+    font-size: 28px;
+    scroll-margin-top: 120px;
+    
 }
 
 .Section1 {
     background-color: rgb(245, 240, 230);
+    
 }
 .Section2 {
     background-image: url('https://www.ucsd.edu/_resources/img/bg-orbs-1.jpg');
@@ -15,25 +18,41 @@
 }
 
 nav {
+    font-size: 28px;
     position: sticky;
-    top: 0;
-    z-index: 1000;
-    background-color: rgb(149, 149, 149);
-    max-width: 400px;
+    top:0;
+    background-color: white;
 }
 .menu {
     list-style-type: none;
+    display: flex;
     padding: 0;
     margin: 0;
-    display: flex;
-}
-.menu li{
-    margin: 0;
-    color: rgb(255, 255, 255);
+    max-height: 120px;
+} 
+.menu img {
+  display: block;
+  max-width: 400px;
+  flex-direction: column;
+  align-self: flex-start;
+ 
 }
 
-menu li a {
+.menu li{
+    display:block;
+    margin-top: 70px;
+    margin-right: 385px;
+    margin-left: -385px;
+    color: #182b49;
     color: rgb(255, 255, 255);
+    padding: 5px 5px;
+
+}
+
+.menu li a {
+    font-size: 28px;
+    padding: 5px;
+    color: #182b49;
     display: block;
     text-align: center;
 }
@@ -42,25 +61,43 @@ menu li a {
     background-color: #182b49;
     color:white;
 }
-.section3 {
+.Section3 {
+    background-color: rgb(245, 240, 230);
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 25px;
+    padding: 25px;
     grid-auto-rows: minmax(100px, auto);
+  }
+  .one, .two, .three, .four {
+    background-color: #182b49;
+    text-align: center;
+    border: 1px solid black;
+    max-height: 500px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    color: white;
+
+  }
+  .section3 {
+    color: black;
+    font-size: 28px;
+    grid-column: 1/5;
+    grid-row: 1;
   }
   .one {
     grid-column: 1;
-    grid-row: 1;
+    grid-row: 2;
   }
   .two {
-    grid-column: 1;
+    grid-column: 2;
     grid-row: 2;
   }
   .three {
-    grid-column: 1;
-    grid-row: 3;
+    grid-column: 3;
+    grid-row: 2;
   }
   .four {
-    grid-column: 1;
-    grid-row: 4;
+    grid-column: 4;
+    grid-row: 2;
   }
